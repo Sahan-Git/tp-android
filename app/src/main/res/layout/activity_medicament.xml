@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   tools:context=".view.MainActivity" android:layout_weight="1">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="564dp" android:id="@+id/lVMedicaments" android:layout_marginTop="300px"/>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <!-- Intégration de la toolbar -->
+        <include
+                layout="@layout/toolbar"/>
+        <!-- Intégration de la Bottomnavigation -->
+        <include
+                layout="@layout/bottomnavigation"/>
+        <TextView
+                android:text="Tous les médicaments"
+                android:layout_width="wrap_content"
+                android:layout_height="115dp" android:id="@+id/textView2" android:textSize="30sp"
+                android:paddingTop="175px" android:paddingLeft="1px"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"/>
+        <!-- Intégration du floating action button -->
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

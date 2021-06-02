@@ -4,19 +4,19 @@
     <item
             android:id="@+id/action_accueil"
             android:enabled="true"
-            android:icon="@drawable/baseline_home_black_18dp"
+            android:icon="@drawable/baseline_add_20"
             android:title="Accueil"
             app:showAsAction="ifRoom"/>
     <item
             android:id="@+id/action_medecine"
             android:enabled="true"
-            android:icon="@drawable/pill_icon_138284"
+            android:icon="@drawable/baseline_medication_24"
             android:title="Médicaments"
             app:showAsAction="ifRoom"/>
     <item
             android:id="@+id/action_settings"
             android:enabled="true"
-            android:icon="@drawable/baseline_settings_black_18dp"
+            android:icon="@drawable/baseline_settings_24"
             android:title="Paramètres"
             app:showAsAction="ifRoom"/>
 </menu>

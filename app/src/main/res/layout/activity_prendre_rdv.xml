@@ -5,11 +5,49 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".view.PrendreRdv">
+        tools:context=".view.PrendreRdvActivity">
 
-    <include
-        layout="@layout/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <include
+                layout="@layout/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:gravity="center" android:layout_gravity="center">
+            <Button
+                    android:text="Choisir la date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/BTNDate"/>
+            <TextView
+                    android:text="Date sélectionnée"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/txtDate"/>
+            <TextView
+                    android:text=" "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/txtVide"/>
+            <Button
+                    android:text="Choisir l'heure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/BTNHeure"/>
+            <TextView
+                    android:text="Heure sélectionnée"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/txtHeure"/>
+            <TextView
+                    android:text=" "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/txtVide2"/>
+            <Button
+                    android:text="Valider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/BTNValider"/>
+        </LinearLayout>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

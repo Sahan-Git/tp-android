@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.sahan.androidv2">
+          xmlns:tools="http://schemas.android.com/tools" package="com.sahan.androidv2">
 
     <application
             android:allowBackup="true"
@@ -9,20 +9,28 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/GsbTheme">
-        <activity android:name=".view.PrendreRdv"
-                  android:parentActivityName=".view.RendezVous">
+        <activity android:name=".view.PrendreRdvActivity"
+                  android:parentActivityName=".view.RendezVousActivity" tools:targetApi="jelly_bean">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".view.RendezVous"
+                android:value=".view.RendezVousActivity"
                 android:resource="@color/text_normal"
             />
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".view.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".view.RendezVousActivity">
+        </activity>
+        <activity android:name=".view.MedicamentActivity">
+        </activity>
+        <activity android:name=".view.ProfilActivity">
+        </activity>
+        <activity android:name=".view.DetailsMedicamentActivity">
         </activity>
     </application>
 
